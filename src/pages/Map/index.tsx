@@ -7,10 +7,27 @@ import Style from "./index.less";
 import icon from "../../../public/images/coffee.png";
 
 export default () => {
+
   const handleInitial = () => {
     mapboxgl.accessToken =
       "pk.eyJ1Ijoic3RldmFnZSIsImEiOiJjazZzd3V2dXEwNGZlM2xtZzFnOXdkOTFtIn0.pKVxwqE61gNc7PKK5u1j6g";
-
+    const geojson = {
+      'features': [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [121.426467,31.208235],
+          },
+          properties: {
+            title: "Home",
+            icon: "harbor",
+            iconSize: [40, 40],
+            description: 'Home',
+          },
+        },
+      ]
+    }
     //球体飞行
     const start = {
       center: [80, 36],
@@ -35,6 +52,7 @@ export default () => {
       container: "map",
       // pitch: 60, // 俯视
       projection: "globe",
+      localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif",
       ...start,
       
     });
