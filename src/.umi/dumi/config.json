@@ -1,0 +1,41 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/~docs",
+          "meta": {
+            "order": null
+          }
+        },
+        {
+          "title": "Components",
+          "path": "/~docs/components",
+          "meta": {},
+          "children": [
+            {
+              "path": "/~docs/components",
+              "title": "业务组件",
+              "meta": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "xboilerplate",
+  "mode": "doc",
+  "repository": {
+    "url": "",
+    "branch": "master"
+  },
+  "theme": {},
+  "exportStatic": {}
+}

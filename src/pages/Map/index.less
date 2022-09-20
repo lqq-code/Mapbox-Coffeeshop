@@ -1,0 +1,40 @@
+.mapContanier{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.leftItem{
+    width: 260px;
+    height: 100%;
+    position: relative;
+    border-left: 1px solid #bba;
+    text-align: center;
+    .leftBg{
+        position: absolute;
+        height: 100vh;
+        color: #C9C4A5;
+        font-family: lobster;
+        font-weight: 700;
+        font-style: italic;
+        z-index: -10;
+        opacity: 0.5;
+        overflow: hidden;
+        filter: blur(0.5px);
+    }
+    h1{
+        margin: 20px 0;
+        font-size: 26px;
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        background: url("../../../public/images/hr.png") center bottom no-repeat;
+        padding-bottom: 50px;
+    }
+}
+.mapItem{
+    width: 100%;
+    height: 100%;
+}
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
