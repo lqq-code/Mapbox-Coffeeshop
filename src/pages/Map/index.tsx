@@ -165,9 +165,9 @@ export default () => {
     <div className={Style.mapContanier}>
       <div className={Style.leftItem}>
         <div className={Style.leftBg}>{AllAddr.bgText}</div>
-        <h1>长宁区咖啡馆</h1>
+        <h1>Changning District Café</h1>
         <Button id="fly" type="dashed">
-          <span>一键飞行✈️</span>
+          <span>One-Click Flight✈️</span>
         </Button>
       </div>
       <div id="map" className={Style.mapItem} />
